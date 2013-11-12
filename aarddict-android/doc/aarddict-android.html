@@ -1,0 +1,249 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Aard Dictionary for Android &mdash; Aard Dictionary</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.9.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Aard Dictionary" href="../../index.html" />
+    <link rel="next" title="Aard Tools" href="../../aardtools/doc/aardtools.html" />
+    <link rel="prev" title="Aard Dictionary" href="../../aarddict/doc/aarddict.html" />
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19351563-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<link rel="stylesheet" type="text/css"
+      href="../../_static/css/aarddict.org.css" />
+<link rel="stylesheet" media="screen" type="text/css"
+      href="../../_static/css/font-awesome.css" />
+
+  </head>
+  <body>
+      <div class="header"><div align="center">
+          <table>
+            <tr>
+              <td>
+	        <a href="../../index.html">
+		  <img style="vertical-align: middle;" src="../../_static/aarddict_big.png"/>
+	        </a>
+              </td>
+              <td>
+                <h1 class="heading" style="padding-top: 0px; padding-left: 10px;"><a href="../../index.html">
+	            <span id="siteName">Aard Dictionary</span></a></h1>
+                <div align="center" style="margin-top: -5px;">
+                  <a class="uplink icon-link"
+                     href="http://github.com/aarddict"><i class="fa fa-github"></i></a>
+                  <a class="uplink icon-link"
+                     href="http://www.twitter.com/aarddict"><i class="fa fa-twitter"></i></a>
+                  <a class="uplink icon-link" href="/forum"><i class="fa fa-comments"></i></a>
+                  <a class="uplink icon-link" href="../../docs/index.html"><i class="fa fa-question-circle"></i></a>
+                </div>
+
+              </td>
+            </tr>
+          </table>
+          </div>
+      </div>
+      <div class="topnav">
+
+	
+	    
+        <p>
+        «&#160;&#160;<a href="../../aarddict/doc/aarddict.html">Aard Dictionary</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../docs/index.html">Docs</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../../aardtools/doc/aardtools.html">Aard Tools</a>&#160;&#160;»
+        </p>
+
+	
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="aard-dictionary-for-android">
+<h1>Aard Dictionary for Android<a class="headerlink" href="#aard-dictionary-for-android" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Aard Dictionary for Android is a port of Aard Dictionary to Android
+(duh!). It uses same dictionaries as desktop version.</p>
+<p>Aard Dictionary for Android consists of two main activities (<cite>Lookup</cite>,
+<cite>Article View</cite>) and two auxiliary activities (<cite>Dictionaries</cite>,
+<cite>Dictionary Info</cite>).</p>
+<p>Application starts with <cite>Lookup</cite> activity. It goes through the list of
+previously open dictionaries and loads them again. If no dictionaries
+are open, user can device scan to find dictionaries.</p>
+<a class="reference internal image-reference" href="../../_images/aarddict-android-1.4-no_dictionaries.png"><img alt="../../_images/aarddict-android-1.4-no_dictionaries.png" src="../../_images/aarddict-android-1.4-no_dictionaries.png" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Aard Dictionary is looking for files with <tt class="file docutils literal"><span class="pre">.aar</span></tt> extension
+by recursively scanning device&#8217;s file system starting from
+<tt class="file docutils literal"><span class="pre">/</span></tt> (excluding some system directories
+such as <tt class="file docutils literal"><span class="pre">/proc</span></tt> or <tt class="file docutils literal"><span class="pre">/etc</span></tt>, hidden directories and ignoring
+symlinks), all dictionaries normally should be
+discovered by this process. However, dictionaries can also be
+opened manually from a file manager such as <a class="reference external" href="http://www.androlib.com/android.application.com-ghostsq-commander-zniE.aspx">Ghost
+Commander</a>: navigate to the dictionary file to be opened, tap on
+it, choose <cite>Aard Dictionary</cite> to complete the action if prompted.</p>
+</div>
+<p>In <cite>Lookup</cite> activity simply start typing in the word lookup
+box. Matching results will appear in the list below it. Scroll down to
+see more lookup results, if available. Tap on an item in the list to
+corresponding article.</p>
+<a class="reference internal image-reference" href="../../_images/aarddict-android-1.1-lookup.png"><img alt="../../_images/aarddict-android-1.1-lookup.png" src="../../_images/aarddict-android-1.1-lookup.png" /></a>
+<p>If more than one article is available with the same or similar title
+<cite>Next</cite> button appears in the bottom right corner on screen touch. Same
+applies when user follows a link from an article: article from the
+same dictionary will be loaded (if found), but if more than one is
+found in all dictionaries user will be able to view them by tapping
+the <cite>Next</cite> button.</p>
+<a class="reference internal image-reference" href="../../_images/aarddict-android-1.1-article.png"><img alt="../../_images/aarddict-android-1.1-article.png" src="../../_images/aarddict-android-1.1-article.png" /></a>
+<p>Use device&#8217;s <cite>Back</cite> button to go back (to previous article, or, if
+there is no previous article, to <cite>Lookup</cite> activity screen). Use
+device&#8217;s <cite>Search</cite> button to close <cite>Article View</cite> activity screen and
+go straight to <cite>Lookup Activity</cite>. If <cite>Article View</cite> was launched from
+another application, closing <cite>Article View</cite> will return user to that
+application instead.</p>
+<p>Use <cite>Zoom In</cite> and <cite>Zoom Out</cite> menu items in <cite>Article View</cite> activity to
+adjust article&#8217;s text size.</p>
+<p>Use device&#8217;s volume control buttons to scroll article text and to
+navigate to next/previous article. Volume down button will navigate to
+the next article when article is already scrolled to the
+bottom. Similarly, volume up button will navigate back when at the top.</p>
+<p>Use <cite>View Online</cite> menu item to see online
+version of current article in the web browser (this only works if
+dictionary&#8217;s metadata includes server URL as is usually the case with
+Wikipedia, Wiktionary, Wikiquote and such).</p>
+<p>View list of currently open dictionaries by opening menu in <cite>Lookup</cite>
+activity and tapping <cite>Dictionaries</cite>.</p>
+<a class="reference internal image-reference" href="../../_images/aarddict-android-1.4-dictionaries.png"><img alt="../../_images/aarddict-android-1.4-dictionaries.png" src="../../_images/aarddict-android-1.4-dictionaries.png" /></a>
+<p>Tap on an item (or select <cite>Info</cite>
+in the menu) in the dictionary list to see dictionary&#8217;s description,
+license and copyright information (if available). Tap and hold (or
+select <cite>Verify</cite> in the menu) to verify dictionary&#8217;s data integrity.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>Info</cite> and <cite>Verify</cite> menu items work when trackball is used for
+interaction (they need an item selected in the dictionary list, but
+selection disappears when touch is used).</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/aarddict-android-1.1-verifying.png"><img alt="../../_images/aarddict-android-1.1-verifying.png" src="../../_images/aarddict-android-1.1-verifying.png" /></a>
+<p>Data integrity verification may take a very long time, especially on
+large dictionaries and/or slow devices.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If data verification indicates that dictionary files are corrupted
+it means there were errors while downloading or copying the files
+to SD card or internal device storage. It may also point to bad
+hardware, such as defective SD card. You may need
+to download and/or copy dictionary files again, or replace SD card
+if defective. Dictionary data can also be verified using desktop
+version of Aard Dictionary to establish whether the error occurred
+during download or file transfer.</p>
+</div>
+<p>If more dictionaries were copied to device after Aard Dictionary
+scanned it, it needs to be re-scanned for Aard Dictionary to pick up
+new dictionaries. Select <cite>Scan Device</cite> menu item in <cite>Dictionaries</cite> to
+do this. Alternatively, new dictionaries can be opened from a file
+manager.</p>
+</div>
+<div class="section" id="initiating-lookup-from-other-applications">
+<h2>Initiating Lookup from Other Applications<a class="headerlink" href="#initiating-lookup-from-other-applications" title="Permalink to this headline">¶</a></h2>
+<p>Many applications implement <cite>Share</cite> action so that selected text can
+be sent to other applications. Since version 1.6.4 Aard Dictionary
+should appear in the list of applications that can receive shared
+text.</p>
+<p>Alternatively, word lookup may be initiated
+directly in Aard Dictionary with the following:</p>
+<div class="highlight-java"><div class="highlight"><pre><span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">();</span>
+<span class="n">intent</span><span class="o">.</span><span class="na">setClassName</span><span class="o">(</span><span class="s">&quot;aarddict.android&quot;</span><span class="o">,</span> <span class="s">&quot;Article&quot;</span><span class="o">);</span>
+<span class="n">intent</span><span class="o">.</span><span class="na">setAction</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_SEARCH</span><span class="o">);</span>
+<span class="n">intent</span><span class="o">.</span><span class="na">putExtra</span><span class="o">(</span><span class="n">SearchManager</span><span class="o">.</span><span class="na">QUERY</span><span class="o">,</span> <span class="n">word</span><span class="o">);</span>
+<span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
+</pre></div>
+</div>
+<p>This should take user immediately to the article with best matching
+title, or to look up screen if nothing found so that user has a chance
+to modify entry.</p>
+</div>
+<div class="section" id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Iryna Gerasymova (Aard Dictionary logo, testing)</li>
+<li>Igor Tkach (<a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> and Aard Dictionary author)</li>
+<li>Jeff Doozan (EInk display support, fixes)</li>
+<li>Chinese translation by <a class="reference external" href="http://bbs.goapk.com">bbs.goapk.com</a></li>
+<li>French translation by Riad Benchoucha</li>
+<li>German translation by <a class="reference external" href="https://github.com/dliw">dliw</a></li>
+</ul>
+</div>
+<div class="section" id="reporting-issues">
+<h2>Reporting Issues<a class="headerlink" href="#reporting-issues" title="Permalink to this headline">¶</a></h2>
+<p>Please submit issue reports and enhancement requests to <a class="reference external" href="http://github.com/aarddict/android/issues">Aard
+Dictionary for Android issue tracker</a>.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+	
+            
+        <p>
+        «&#160;&#160;<a href="../../aarddict/doc/aarddict.html">Aard Dictionary</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../docs/index.html">Docs</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../../aardtools/doc/aardtools.html">Aard Tools</a>&#160;&#160;»
+        </p>
+
+	
+      </div>
+
+
+
+
+    <div class="footer">
+        &copy; Copyright 2008-2013, Igor Tkach.
+      Last updated on Nov 12, 2013.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+    <div class="footer">
+      <a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy
+    </div>
+
+
+  </body>
+</html>
