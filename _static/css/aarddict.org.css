@@ -2,27 +2,6 @@ body {
     min-width: 30em;
 }
 
-div.screenshots {
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-div.screenshots img {
-    width: 120px;
-    border: thin solid #355F7C;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.downloaddescr {
-    font-size: x-small;
-}
-
-.linkdescr {
-    line-height : 130%;
-}
-
 a.external:after {
   display: inline-block;
   font-family: FontAwesome;
@@ -37,66 +16,29 @@ a.external:after {
   margin-left: 2px;
 }
 
+.downloadLinkList a:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f019";
+  margin-right: 3px;
+}
+
 .hidden {
-    visibility:hidden;
+    visibility: hidden;
 }
 
-#downloadButton {
-    width: 8em;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-}
-
-a.button {
-  text-align: center;
-  font-size: 1.3em;
-  font-weight: bold;
-  background-color: green;
-  border: thin solid darkgreen;
-  display: block;
-  padding: 5px;
-  color: white;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-}
-
-a.button:link {
-    text-decoration: none;
-}
-
-a.button: visited {
-    text-decoration: none;
-    color: white;
-}
-
-a.button:hover {
-    text-decoration: none;
-    background-color: #009900;
-}
-
-a.button:active {
-    text-decoration: none;
-    background-color: #006600;
-}
-
-.featureddownload {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: large;
+ul>li>small {
+    font-style: italic;
+    font-family: serif;
 }
 
 div.header h2 {
     text-transform: none;
     color: gray;
-}
-
-a.altversionlink {
-   color: #aaa;
-   font-size: small;
-   font-weight: normal;
-   margin-top: -3px;
-   margin-bottom: 0px;
 }
 
 #siteName {
@@ -124,4 +66,13 @@ i.fa {
 
 li {
  list-style-type: none;
+}
+
+ul.downloadLinkList {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+    column-count: 2;
+    column-gap: 2em;
 }
