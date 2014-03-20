@@ -16,7 +16,7 @@ a.external:after {
   margin-left: 2px;
 }
 
-.downloadLinkList a:before {
+.downloadLinkList a[href^="http:"]:before {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
