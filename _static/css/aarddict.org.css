@@ -27,6 +27,29 @@ a.external:after {
   margin-right: 3px;
 }
 
+.downloadLinkList a[href^="magnet:"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f076";
+  margin-right: 3px;
+}
+
+.downloadLinkList a[href$=".torrent"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0ed";
+  margin-right: 3px;
+}
+
+
 .hidden {
     visibility: hidden;
 }
