@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -152,16 +151,18 @@ viewer uses the following metadata keys:</p>
 <dl class="docutils">
 <dt>article_count</dt>
 <dd><p class="first">number of unique articles in the volume</p>
-<p class="last versionchanged">
-<span class="versionmodified">Changed in version 0.9.0: </span>In previous versions this property meant total number of
+<div class="last versionchanged">
+<p><span class="versionmodified">Changed in version 0.9.0: </span>In previous versions this property meant total number of
 articles in the whole dictionary. Readers should examine
 <cite>article_count_is_volume_total</cite> metadata property to determine
 whether this value refers to number of articles in volume or in
 dictionary.</p>
+</div>
 </dd>
 <dt>article_count_is_volume_total</dt>
-<dd><p class="first versionadded">
-<span class="versionmodified">New in version 0.9.0.</span></p>
+<dd><div class="first versionadded">
+<p><span class="versionmodified">New in version 0.9.0.</span></p>
+</div>
 <p class="last"><tt class="docutils literal"><span class="pre">true</span></tt> if <cite>article_count</cite> property means total number of articles in
 the volume. Since aardtools 0.9.0 compiler always sets this property
 to <tt class="docutils literal"><span class="pre">true</span></tt>.</p>
@@ -198,7 +199,7 @@ dictionary key text and key text itself.</p>
 <h3>Articles<a class="headerlink" href="#articles" title="Permalink to this headline">¶</a></h3>
 <p>Articles is a sequence of variable length items containing two values: length
 of article text and article text itself.</p>
-<div class="admonition-see-also admonition seealso">
+<div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
 <dt>Module <tt class="xref py py-mod docutils literal"><span class="pre">struct</span></tt></dt>
@@ -238,8 +239,8 @@ enclosing <tt class="docutils literal"><span class="pre">html</span></tt> and <t
 
     <div class="footer">
         &copy; Copyright 2008-2013, Igor Tkach.
-      Last updated on Aug 13, 2014.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Last updated on Aug 30, 2014.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
     <div class="footer">
       <small><a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy</small>
