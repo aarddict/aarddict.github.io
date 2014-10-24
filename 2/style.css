@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#app-name {
+    font-size: 7rem;
+}
+
+#app-name {
+    padding-left: 20px;
+    padding-rigth: 20px;
+}
+
+#app-name sub {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#content ul {
+    list-style-type: none;
+}
+
+#content ul li {
+    padding: 5px;
+}
+
+#app-logo {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#content {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
