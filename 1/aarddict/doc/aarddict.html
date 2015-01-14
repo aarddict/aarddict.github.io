@@ -1,0 +1,954 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Aard Dictionary &mdash; Aard Dictionary</title>
+    
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.9.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Aard Dictionary" href="../../index.html" />
+    <link rel="next" title="Aard Dictionary for Android" href="../../aarddict-android/doc/aarddict-android.html" />
+    <link rel="prev" title="Documentation" href="../../docs/index.html" />
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19351563-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<link rel="stylesheet" type="text/css"
+      href="../../_static/css/aarddict.org.css" />
+<link rel="stylesheet" media="screen" type="text/css"
+      href="../../_static/css/font-awesome.css" />
+
+  </head>
+  <body>
+      <div class="header"><div align="center">
+          <table>
+            <tr>
+              <td>
+	        <a href="../../index.html">
+		  <img style="vertical-align: middle;" src="../../_static/aarddict_big.png"/>
+	        </a>
+              </td>
+              <td>
+                <h1 class="heading" style="padding-top: 0px; padding-left: 10px;"><a href="../../index.html">
+	            <span id="siteName">Aard Dictionary</span></a></h1>
+                <div align="center" style="margin-top: -5px;">
+                  <a class="uplink icon-link"
+                     href="http://github.com/aarddict"><i class="fa fa-github"></i></a>
+                  <a class="uplink icon-link"
+                     href="http://www.twitter.com/aarddict"><i class="fa fa-twitter"></i></a>
+                  <a class="uplink icon-link" href="/forum"><i class="fa fa-comments"></i></a>
+                  <a class="uplink icon-link" href="../../docs/index.html"><i class="fa fa-question-circle"></i></a>
+                </div>
+
+              </td>
+            </tr>
+          </table>
+          </div>
+      </div>
+      <div class="topnav">
+
+	
+	    
+        <p>
+        <a class="uplink" href="../../docs/index.html">Docs</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../../aarddict-android/doc/aarddict-android.html">Aard Dictionary for Android</a>&#160;&#160;»
+        </p>
+
+	
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="aard-dictionary">
+<h1>Aard Dictionary<a class="headerlink" href="#aard-dictionary" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Aard Dictionary&#8217;s user interface consists of lookup and history pane
+(initally grouped into tabs), article pane, toolbar and menu.</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_planks_law.png" src="../../_images/aarddict_0.9.0_ubuntu_planks_law.png" />
+<p>First open some dictionaries, either by selecting
+<em class="menuselection">Dictionary ‣ Add Dictionaries</em> or
+<em class="menuselection">Dictionary ‣ Add Directory</em>. Adding a directory means
+that Aard Dictionary will scan that directory (without subdirectories)
+and open any dictionaries it finds every time it is started.</p>
+<p>Dictionaries have <cite>.aar</cite> extension.</p>
+<p>Start typing a word to look up in <cite>Lookup Box</cite>. List of matching words
+appears below <cite>Lookup Box</cite> and is updated when typing is paused, best
+matches displayed first (at the top of the list) and first match
+automatically selected. Articles with similar titles found in one or
+more dictionaries are grouped together and are display in multiple
+tabs in article pane when selected.</p>
+<p>Lookup pane, history pane and toolbar can be rearranged and moved to a new
+position (click pane&#8217;s title bar or toolbar&#8217;s drag handle and start
+dragging), either docked around article pane:</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_helium.png" src="../../_images/aarddict_0.9.0_ubuntu_helium.png" />
+<img alt="../../_images/aarddict_0.9.0_ubuntu_nitrogen.png" src="../../_images/aarddict_0.9.0_ubuntu_nitrogen.png" />
+<p>or floating:</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_taylor_series.png" src="../../_images/aarddict_0.9.0_ubuntu_taylor_series.png" />
+<p>Lookup pane, history pane and toolbar can also be hidden
+(through <em class="menuselection">View</em> menu, close button in lookup and history pane&#8217;s
+title bar, or context menu over menu bar, tool bar or lokup and
+history title bars).</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_periodic_table.png" src="../../_images/aarddict_0.9.0_ubuntu_periodic_table.png" />
+<p>Article visual style can be customized with <cite>Article Appearance</cite>
+dialog (<em class="menuselection">Article ‣ Appearance...</em>).</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#article-appearance">Article Appearance</a></p>
+</div>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_article_appearance.png" src="../../_images/aarddict_0.9.0_ubuntu_article_appearance.png" />
+<p><em class="menuselection">Article ‣ Find</em> brings up <cite>Find</cite> bar:</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_pascals_triangle.png" src="../../_images/aarddict_0.9.0_ubuntu_pascals_triangle.png" />
+<p>Matching text in current article is selected as user types. Use <cite>Find</cite>
+bar&#8217;s arrow buttons or <tt class="kbd docutils literal"><span class="pre">Shift+Enter</span></tt>/<tt class="kbd docutils literal"><span class="pre">Enter</span></tt> to select
+previous/next occurence of the phrase. Hide <cite>Find</cite> bar with the close
+button or <tt class="kbd docutils literal"><span class="pre">Esc</span></tt>.</p>
+</div>
+<div class="section" id="keyboard-navigation">
+<h2>Keyboard Navigation<a class="headerlink" href="#keyboard-navigation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="application-shortcuts">
+<h3>Application Shortcuts<a class="headerlink" href="#application-shortcuts" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="41%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Sequence</th>
+<th class="head">Action</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+O</span></tt></td>
+<td><em class="menuselection">Dictionary ‣ Add
+Dictionaries</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+Shift+O</span></tt></td>
+<td><em class="menuselection">Dictionary ‣ Add
+Directory</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+R</span></tt></td>
+<td><em class="menuselection">Dictionary ‣
+Remove</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+E</span></tt></td>
+<td><em class="menuselection">Dictionary ‣
+Verify</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+I</span></tt></td>
+<td><em class="menuselection">Dictionary ‣ Info</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+Q</span></tt></td>
+<td><em class="menuselection">Dictionary ‣ Quit</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+N</span></tt></td>
+<td>Move keyboard focus to lookup box
+and clear it&#8217;s content</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+Enter</span></tt></td>
+<td><em class="menuselection">Edit ‣ Lookup</em></td>
+<td>Lookup selected text in
+dictionaries. Just like other
+actions in <cite>Edit</cite> menu, this
+applies to the widget that
+currently has keyboard focus.</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+X</span></tt></td>
+<td><em class="menuselection">Edit ‣ Cut</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+C</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+Insert</span></tt></td>
+<td><em class="menuselection">Edit ‣ Copy</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+V</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Shift+Insert</span></tt></td>
+<td><em class="menuselection">Edit ‣ Paste</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Del</span></tt></td>
+<td><em class="menuselection">Edit ‣ Delete</em></td>
+<td>Delete currently selected text,
+or, if no text is selected,
+character to the right of current
+caret position.</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+A</span></tt></td>
+<td><em class="menuselection">Edit ‣ Select All</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+L</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">F2</span></tt></td>
+<td><em class="menuselection">Navigate ‣ Lookup
+Box</em></td>
+<td>Moves keyboard focus to <cite>Lookup
+Box</cite> (making lookup pane visible
+if hidden) and selects it&#8217;s
+current text. Start typing to
+replace current text or start
+editing current text by moving
+caret with <tt class="kbd docutils literal"><span class="pre">Left</span></tt> or
+<tt class="kbd docutils literal"><span class="pre">Right</span></tt> arrow keys.</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Alt+Left</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Esc</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+[</span></tt></td>
+<td><em class="menuselection">Navigate ‣ Back</em></td>
+<td>On Nokia Internet Tablets
+<tt class="kbd docutils literal"><span class="pre">Esc</span></tt> maps to
+<cite>Back</cite>/<cite>Cancel</cite> button. If Find
+bar is currently visible <cite>Esc</cite>
+hides it instead of going back.</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Alt+Right</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Shift+Esc</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+]</span></tt></td>
+<td><em class="menuselection">Navigate ‣ Forward</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+K</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+,</span></tt></td>
+<td><em class="menuselection">Navigate ‣ Previous
+Article</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+J</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+.</span></tt></td>
+<td><em class="menuselection">Navigate ‣ Next
+Article</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+F</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">/</span></tt></td>
+<td><em class="menuselection">Article ‣ Find</em></td>
+<td><tt class="kbd docutils literal"><span class="pre">/</span></tt> doesn&#8217;t work
+inside lookup box, types
+<cite>/</cite> instead.</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+S</span></tt></td>
+<td><em class="menuselection">Article ‣ Save</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+T</span></tt></td>
+<td><em class="menuselection">Article ‣ View
+Online</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+U</span></tt></td>
+<td><em class="menuselection">Article ‣
+Appearance</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl++</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+=</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">F7</span></tt></td>
+<td><em class="menuselection">View ‣ Text Size
+‣ Increase</em></td>
+<td>On Nokia Internet Tablets
+<tt class="kbd docutils literal"><span class="pre">F7</span></tt> maps to <cite>Zoom In</cite>
+button.</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+-</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">F8</span></tt></td>
+<td><em class="menuselection">View ‣ Text Size
+‣ Decrease</em></td>
+<td>On Nokia Internet Tablets
+<tt class="kbd docutils literal"><span class="pre">F8</span></tt> maps to <cite>Zoom
+Out</cite> button.</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Ctrl+0</span></tt></td>
+<td><em class="menuselection">View ‣ Text Size
+‣ Reset</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">F11</span></tt>,
+<tt class="kbd docutils literal"><span class="pre">Ctrl+Shift+F</span></tt></td>
+<td><em class="menuselection">View ‣ Full Screen</em></td>
+<td>On Nokia Internet Tablets
+full screen mode is toggled
+by the <cite>Full Screen</cite>
+button.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lookup-box">
+<h3>Lookup Box<a class="headerlink" href="#lookup-box" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="43%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Enter</span></tt></td>
+<td>Move keyboard focus to current
+article</td>
+<td>Keyboard focus moves to
+current article so that it
+can be scrolled with
+standard navigation keys.</td>
+</tr>
+<tr class="row-even"><td>OS standard
+navigation keys for
+moving to
+next/previous line,
+next/previous page,
+start/end of document</td>
+<td>Navigate word completion list</td>
+<td>Keyboard focus remains in
+lookup box.</td>
+</tr>
+</tbody>
+</table>
+<p>OS standard navigation keys also work in word completion list and
+history list. Activating an item in these lists (<tt class="kbd docutils literal"><span class="pre">Enter</span></tt> on
+Windows and X Windows) also moves keyboard focus to current article.</p>
+</div>
+<div class="section" id="find-bar">
+<h3>Find Bar<a class="headerlink" href="#find-bar" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="43%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="kbd docutils literal"><span class="pre">Enter</span></tt></td>
+<td>Find the next occurence of the
+phrase</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="kbd docutils literal"><span class="pre">Shift+Enter</span></tt></td>
+<td>Find the previous occurence of the
+phrase</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>OS standard
+navigation keys for
+moving to
+next/previous line,
+next/previous page,
+start/end of document</td>
+<td>Scroll article view</td>
+<td>Keyboard focus remains in
+find box.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="wikipedia-language-link-support">
+<h2>Wikipedia Language Link Support<a class="headerlink" href="#wikipedia-language-link-support" title="Permalink to this headline">¶</a></h2>
+<p>Many Wikipedia articles have equivalent articles in other language
+Wikipedias and contain corresponding inter-wiki links. Aard Dictionary
+compiler can optionally put corresponding article titles into
+dictionary&#8217;s index so that articles can be found by their titles in other
+languages. For example, if English Wikipedia is compiled with Russian
+language links, searching for <cite>Уравнение лап</cite> finds <cite>Laplace&#8217;s
+Equation</cite> by corresponding Russian title <cite>Уравнение Лапласа</cite>.</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_laplaces_equation.png" src="../../_images/aarddict_0.9.0_ubuntu_laplaces_equation.png" />
+<p>Note redirect title at the top.</p>
+<p>Dictionary info dialog shows list of language link languages included
+into dictionarie&#8217;s lookup index.</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_dict_info.png" src="../../_images/aarddict_0.9.0_ubuntu_dict_info.png" />
+</div>
+<div class="section" id="verifying-dictionary-data-integrity">
+<h2>Verifying Dictionary Data Integrity<a class="headerlink" href="#verifying-dictionary-data-integrity" title="Permalink to this headline">¶</a></h2>
+<p>When downloading or copying large data files such as Aard Dicrionary
+volumes data may get corrupted due to software, hardware or data
+transmittion error. Dictionary volumes store <a class="reference external" href="http://en.wikipedia.org/wiki/SHA_hash_functions">SHA-1</a> digest of the content
+which is used to verify data integrity. To verify volume data
+integrity open <cite>Verify</cite> dialog (<em class="menuselection">Dictionary ‣
+Verify...</em>), select one of the volumes and click <cite>Verify</cite> button.</p>
+<img alt="../../_images/aarddict_0.9.0_ubuntu_verifying.png" src="../../_images/aarddict_0.9.0_ubuntu_verifying.png" />
+<p>Once verified volume status changes from <cite>Unverified</cite> to <cite>OK</cite> or
+<cite>Corrupt</cite>.</p>
+<p>Volumes can also be verified by running Aard Dictionary
+from the command line like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>aarddict --verify enwiki-20090810-1.1_of_4.aar enwiki-20090810-1.2_of_4.aar
+</pre></div>
+</div>
+</div>
+<div class="section" id="article-appearance">
+<h2>Article Appearance<a class="headerlink" href="#article-appearance" title="Permalink to this headline">¶</a></h2>
+<p>Article appearance can be changed via <cite>Article Appearance</cite>
+dialog (<em class="menuselection">Article ‣ Appearance...</em>). User can switch between
+Wikipedia style (based on default Wikipedia skin, <a class="reference external" href="http://en.wikipedia.org/wiki/MediaWiki:Monobook.css">Monobook</a>) and Aard
+style which allows to customize link colors and article text
+font.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.9.1: </span>Power users can further customize article appearance by creating
+and editing <tt class="file docutils literal"><span class="pre">user.css</span></tt> in <tt class="file docutils literal"><span class="pre">$HOME/.aarddict</span></tt> directory.</p>
+<p>Here&#8217;s a naïve example of creating a dark color theme for articles:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">body</span><span class="o">,</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.tex</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">lightgray</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.infobox</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">80</span><span class="o">,</span> <span class="m">80</span><span class="o">,</span> <span class="m">80</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="user-interface-language">
+<h2>User Interface Language<a class="headerlink" href="#user-interface-language" title="Permalink to this headline">¶</a></h2>
+<p>Currently Aard Dictionary user interface is available in English,
+Russian and Greek. User interface language should be selected automatically
+based on system&#8217;s locale. System settings can be overridden by
+starting Aard Dictionary from command line like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ LANG=ru_RU.UTF-8 aarddict
+</pre></div>
+</div>
+<p>If specified locale is not available this will result in GTK warning</p>
+<div class="highlight-python"><div class="highlight"><pre>(process:12326): Gtk-WARNING **: Locale not supported by C library.
+        Using the fallback &#39;C&#39; locale.
+</pre></div>
+</div>
+<p>followed by a stack trace and Aard Dictionary will fail to
+start. Corresponding locale will need to be installed. For example, in
+Ubuntu 9.04 the following command will fix the error:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ sudo locale-gen ru
+</pre></div>
+</div>
+</div>
+<div class="section" id="fonts">
+<h2>Fonts<a class="headerlink" href="#fonts" title="Permalink to this headline">¶</a></h2>
+<p>Many dictionaries use <a class="reference external" href="http://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA) in
+their articles to write phonetic transcription of a word (describe
+it&#8217;s pronunciation). To have IPA
+characters displayed properly you may
+need to install one of the excellent IPA fonts available at
+<a class="reference external" href="http://scripts.sil.org">http://scripts.sil.org</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Aard Dictionary 0.7.x supports special tag for marking
+up phonetic transcription. Font for the article text marked as
+phonetic transcription can be assigned through <em class="menuselection">View
+‣ Phonetic Font...</em> menu.</p>
+</div>
+<p>You also may need to install additional fonts if you use dictionaries
+that use script not available on your system. <a class="reference external" href="http://www.wazu.jp/">WAZU JAPAN&#8217;s Gallery of
+Unicode Fonts</a> is an excellent resource for various unicode fonts.</p>
+<p>To install fonts on Maemo simply create <tt class="docutils literal"><span class="pre">/home/user/.fonts</span></tt>
+directory and copy font files there. New fonts should now appear in
+font selection dialogs across the system, including <cite>Phonetic Font</cite>
+dialog in Aard Dictionary 0.7.x.</p>
+<p>If you don&#8217;t like to copy font files into <tt class="docutils literal"><span class="pre">/home/user/.fonts</span></tt> or
+don&#8217;t know how to do it you may install <a class="reference external" href="http://aarddict.org/dists/diablo/user/binary-armel/ttf-sil-doulos_4.104-1maemo_all.deb">Doulos SIL Font package</a>
+with Maemo Application Manager.</p>
+</div>
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Wikipedia for Aard Dictionary doesn&#8217;t include any audio, video and
+images except for images rendering math.</li>
+<li>Wikipedia for Aard Dictionary does not include Wikipedia
+navigational features like categories, portals and navigation boxes.</li>
+<li>Only some wikipedia inter-project links work. Links that start with
+a prefix followed by <tt class="docutils literal"><span class="pre">:</span></tt> are resolved by looking for corresponding
+server url in interwiki map in dictionary&#8217;s siteinfo and finding
+a dictionary with that server url among open dictioneries. Siteinfo
+generated by Wikipedia API does not always accurately reflect
+prefixes actually used, so some prefixes fail to resolve.
+Also, links with more complex prefixes  - like
+&#8220;w:ru:&#8221; don&#8217;t work.</li>
+<li>Many XDXF dictionaries have only basic or no markup in
+articles. Accordingly, dictionaries converted from such XDXF also
+have just plain text articles. Some dictionaries have simple plain
+text markup or formatting conventions that can be converted to
+proper XDXF and aard markup, but this requires a custom conversion
+tool which hasn&#8217;t been written yet.</li>
+</ul>
+</div>
+<div class="section" id="installation-notes">
+<h2>Installation Notes<a class="headerlink" href="#installation-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p>If starting the application results in error message like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>This application has failed to start because the application
+configuration is incorrect. Reinstalling the application may fix this
+problem.
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-python"><div class="highlight"><pre>The application has failed to start because its side-by-side
+configuration is incorrect. Please see the application event log for
+more detail.
+</pre></div>
+</div>
+<p>most likely <a class="reference external" href="http://www.microsoft.com/downloads/details.aspx?familyid=A5C84275-3B97-4AB7-A40D-3802B2AF5FC2&amp;displaylang=en">Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)</a>
+needs to be installed.</p>
+<p>On Windows earlier than Windows XP SP3 users may also need to install
+<a class="reference external" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=32BC1BEE-A3F9-4C13-9C99-220B62A191EE&amp;displaylang=en">Microsoft Visual C++ 2005 Redistributable Package (x86)</a>.</p>
+</div>
+<div class="section" id="maemo">
+<h3>Maemo<a class="headerlink" href="#maemo" title="Permalink to this headline">¶</a></h3>
+<p>Aard Dictionary starting with 0.8.0 depends on PyQt4 libraries which
+have not been officially released for Maemo 4 (N800 and N810) and are
+only available in development repository.
+Maemo 4 users can use <a class="reference external" href="http://github.com/downloads/aarddict/desktop/maemo.install">single click install for Maemo 5</a>, but must enable
+<a class="reference external" href="http://repository.maemo.org/extras/install/extras-devel.install">Diablo Extras-devel repository</a> first. Be advised that <cite>extras-devel</cite>
+contains potentially unstable software that is primarily intended for
+developers and testers.</p>
+<p>Another issue users may encounter when installing on N800/N810 is that
+Aard Dictionary 0.8.0 together with PyQt4 and Qt4 libraries is
+approximately 23 Mb download and requires some 70 Mb of device
+memory. Some applications may need to be uninstalled to free enough
+memory for the installation.</p>
+</div>
+</div>
+<div class="section" id="building-mac-os-x-app">
+<h2>Building Mac OS X App<a class="headerlink" href="#building-mac-os-x-app" title="Permalink to this headline">¶</a></h2>
+<p>Mac OS X application bundle can be built with <a class="reference external" href="http://svn.pythonmac.org/py2app/py2app/trunk/doc/index.html">py2app</a> for Aard
+Dictionary 0.8.0 and newer.</p>
+<ul>
+<li><p class="first">Install <a class="reference external" href="http://www.macports.org/">MacPorts</a></p>
+</li>
+<li><p class="first">Install Python 2.6:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo port install python26 +no_tkinter +ucs4
+</pre></div>
+</div>
+<p>Change environment to make this Python version default:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo port install python_select
+sudo python_select python26
+</pre></div>
+</div>
+<p>Make sure Python 2.6 you just installed runs indeed when you type
+<tt class="docutils literal"><span class="pre">python</span></tt> (you mae need to open a new terminal for
+<tt class="docutils literal"><span class="pre">python_select</span></tt> to take effect).</p>
+</li>
+<li><p class="first">Install PyQT4:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo port install py26-pyqt4
+</pre></div>
+</div>
+<p>This should bring in py26-sip and qt4-mac as dependencies. Qt4
+compilation takes several hours and requires a lot of disc space
+(around 6-8 Gb).</p>
+</li>
+<li><p class="first">Install py2app:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo port install py26-py2app
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install PyICU. This is a bit tricky because MacPorts 1.8.1 includes
+ICU 4.3.1 and PyICU doesn&#8217;t seem to build with that. It looks like
+<tt class="docutils literal"><span class="pre">py26-pyicu</span> <span class="pre">&#64;0.8.1</span></tt> port was added when ICU was at 4.2.0 and it
+probably worked then. In any case, PyICU 0.8.1 only claims to work
+with ICU 3.6 and 3.8, so it is best to install and activate older
+ICU port - 3.8.1.</p>
+</li>
+<li><p class="first">Copy <tt class="file docutils literal"><span class="pre">aarddict.py</span></tt> recipe (and <tt class="file docutils literal"><span class="pre">__init__.py</span></tt>) for py2app
+from <tt class="docutils literal"><span class="pre">macosx</span></tt> to installed py2app package directory:</p>
+<div class="highlight-python"><div class="highlight"><pre>cp macosx/py2app/recipes/*.py /opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/py2app/recipes/
+</pre></div>
+</div>
+<p>This recipe is same as for <cite>numpy</cite> and other libraries that have
+package data and won&#8217;t work if put in zip archive.</p>
+</li>
+<li><p class="first">Finally, run <a class="reference external" href="http://svn.pythonmac.org/py2app/py2app/trunk/doc/index.html">py2app</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>python setup.py py2app
+</pre></div>
+</div>
+</li>
+<li><p class="first">Remove unused debug binaries:</p>
+<div class="highlight-python"><div class="highlight"><pre>find dist/ -name &quot;*_debug*&quot; -print0 | xargs -0 rm
+</pre></div>
+</div>
+<p>A number of unused Qt frameworks gets included in final app (QtDesigner,
+QtSql etc.) but they can&#8217;t be removed since they are linked in
+<tt class="file docutils literal"><span class="pre">_qt.so</span></tt>.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="pre-history">
+<h2>Pre-History<a class="headerlink" href="#pre-history" title="Permalink to this headline">¶</a></h2>
+<p>Aard Dictionary started from <a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> code base as an attempt
+to address some of it&#8217;s shortcomings. Initially Jeremy Mortis started
+to hack on <a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> and <a class="reference external" href="http://www.sdict.com/en/versions.php?version=unix_ptk">ptksdict</a> so that he could look up
+words in French Wikipedia without having to type accented
+characters. This required changes to dictionary format. Trying to make
+<a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> work with both the original Sdictionary format and the
+new format turned out to be cumbersome and limiting, so <a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a>
+was forked into a new project that can focus on building functionality
+around new format.</p>
+<div class="section" id="sdict-viewer-issues">
+<h3>SDict Viewer Issues<a class="headerlink" href="#sdict-viewer-issues" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> has a number of
+issues due to limitations of underlying Sdictionary format developed
+by <a class="reference external" href="http://axmasoft.com">AXMA Soft</a>. Aard Dictionary tries to resolve them by introducing
+<a class="reference internal" href="../../aardtools/doc/aardformat.html"><em>aard format</em></a>.</p>
+<div class="section" id="short-index-depth">
+<h4>Short Index Depth<a class="headerlink" href="#short-index-depth" title="Permalink to this headline">¶</a></h4>
+<p>Sdictionary relies on so called <cite>short index</cite> to perform word lookups.
+First few letters of all words in a dictionary are mapped to a pointer
+that points to position in <cite>full index</cite> (maximum length of a key in
+short index is <cite>index depth</cite>). To find a word SDict Viewer uses short
+index to jump to a particular place in full index and then iterates
+through the word list until it finds the word or encounters a word
+that doesn&#8217;t begin with the same letters.</p>
+<p>This works reasonably well for small and medium sized
+dictionaries. Short index depth for dictionaries from <a class="reference external" href="http://sdict.com">http://sdict.com</a>
+is 3, although the format theoretically allows deeper short
+index. With large dictionaries like Wikipedia short index of depth 3
+is not enough: SDict Viewer sometimes ends up iterating through tens
+or even hundreds of thousands words, which takes significant amount of
+time even on powerful desktop machines.</p>
+<p>SDict Viewer tries to alleviate this problem by building additional
+short index on the fly as it iterates through corresponding word list
+fragment, so that subsequent lookups in that fragment of word list are
+fast. This, however, significantly slows down first lookup.</p>
+<p>Reading and parsing short index when opening a dictionary is in itself
+a time consuming operation. SDict Viewer saves binary dump of short
+index on application exit, which speeds up subsequent loads of
+corresponding dictionary. This, however, requires certain amount of
+storage and memory at runtime. Size of short index may grow
+noticeably - depending on how &#8220;under-indexed&#8221; a particular dictionary
+is and how often it is used.</p>
+</div>
+<div class="section" id="article-formatting">
+<h4>Article Formatting<a class="headerlink" href="#article-formatting" title="Permalink to this headline">¶</a></h4>
+<p>Sdictionary format uses several HTML-style tags to mark up dictionary
+article text. Sdictionary compiler doesn&#8217;t escape special characters
+like <tt class="docutils literal"><span class="pre">&lt;</span></tt> and <tt class="docutils literal"><span class="pre">&gt;</span></tt>, doesn&#8217;t produce well-formed markup, doesn&#8217;t produce
+clean article text.    Parsing such article text on Nokia Internet
+Tablets is not very fast and doesn&#8217;t always produce nice-looking
+results.</p>
+</div>
+<div class="section" id="hyperlinks">
+<h4>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h4>
+<p>Sdictionary format defines <tt class="docutils literal"><span class="pre">&lt;r&gt;</span></tt> tag to mark regions of text that are
+links (references) to other entries in the same dictionary. There is,
+however, no facility to specify link target, so this mechanism breaks
+when link target is not exactly the same as corresponding text in the
+article. There is no support for external (<tt class="docutils literal"><span class="pre">http://</span></tt>) links. SDict
+Viewer treats all strings that start with <tt class="docutils literal"><span class="pre">http://</span></tt> as external links,
+this slows down article formatting.</p>
+</div>
+<div class="section" id="compression">
+<h4>Compression<a class="headerlink" href="#compression" title="Permalink to this headline">¶</a></h4>
+<p>Sdictionary format theoretically has three options for compressing
+dictionary data: no compression, gzip and bzip2. In practice all
+dictionaries actually use gzip. Sdictionary compiler doesn&#8217;t actually
+allow to create bzip2 compressed dictionaries.</p>
+</div>
+</div>
+</div>
+<div class="section" id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Jeremy Mortis (initial Aard Dictionary file format design and implementation,
+initial dictionary compiler implementation)</li>
+<li>Sam Tygier (patches, ideas, <a class="reference external" href="http://torrent.tygier.co.uk:6969/">BitTorrent tracker</a>)</li>
+<li>Jennie Petoumenou (Greek translation, testing)</li>
+<li>Iryna Gerasymova (Aard Dictionary logo, testing)</li>
+<li>Igor Tkach (<a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a> and Aard Dictionary author)</li>
+</ul>
+</div>
+<div class="section" id="reporting-issues">
+<h2>Reporting Issues<a class="headerlink" href="#reporting-issues" title="Permalink to this headline">¶</a></h2>
+<p>Please submit issue reports and enhancement requests to <a class="reference external" href="http://github.com/aarddict/desktop/issues">Aard
+Dictionary issue tracker</a>.</p>
+</div>
+<div class="section" id="changes">
+<h2>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>0.9.3<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix opening read-only dictionary files (<a class="reference external" href="http://github.com/aarddict/desktop/issues/19">issue #19</a>)</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>0.9.2<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Keyboard focus is no longer automatically transferred to article
+view when word is selected in word completion list
+(<a class="reference external" href="http://github.com/aarddict/desktop/issues/18">issue #18</a>)</li>
+<li>Transfer keyboard focus to article view when word is activated in
+word completion list or history</li>
+<li>Fix aarddict&#8217;s command line <cite>verify</cite>, <cite>identify</cite> and <cite>metadata</cite>
+operations (<a class="reference external" href="http://github.com/aarddict/desktop/issues/16">issue #16</a>)</li>
+<li>Windows installer no longer installs URL shortcuts to Aard
+Dictionary&#8217;s web site and forum (<a class="reference external" href="http://github.com/aarddict/desktop/issues/17">issue #17</a>)</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>0.9.1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Improve full screen mode: show only article tabs, hide everything
+else.</li>
+<li>Update Wikipedia style so that article content has some margin
+around it, like in Aard style.</li>
+<li>Make application shortcuts work regardless of whether menubar or
+toolbar are visible. This was affecting Maemo users since menubar is
+not displayed there and toolbar doesn&#8217;t have all actions and can be
+turned off.</li>
+<li>Fix article CSS to not hide content of <cite>pre</cite> elements</li>
+<li><tt class="kbd docutils literal"><span class="pre">Control+,</span></tt>/<tt class="kbd docutils literal"><span class="pre">Ctrl+.</span></tt> for previous/next article no longer
+prints <tt class="docutils literal"><span class="pre">,</span></tt>/<tt class="docutils literal"><span class="pre">.</span></tt> when in lookup or find input field and
+corresponding action is disabled</li>
+<li>Show status message in the middle of tab widget for lookup in
+progress and when lookup didn&#8217;t yield any results</li>
+<li>Load user-defined article style (CSS) from
+<tt class="file docutils literal"><span class="pre">$HOME/.aarddict/user.css</span></tt>.</li>
+<li>Use <tt class="kbd docutils literal"><span class="pre">Ctrl+Shift+F</span></tt> instead of <tt class="kbd docutils literal"><span class="pre">F11</span></tt> as shortcut for full
+screen toggle on Mac.</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>0.9.0<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Implement ability to find text in article (<em class="menuselection">Article ‣ Find...</em>).</li>
+<li>Implement ability to select aticle text font when not using
+Wikipedia style (<a class="reference external" href="http://github.com/aarddict/desktop/issues/7">issue #7</a>)</li>
+<li>Add menu <em class="menuselection">Edit</em> with new action to look up currently
+selected text (<em class="menuselection">Edit ‣ Lookup</em>) and standard
+editing actions applied to currently focused widget (<cite>Lookup</cite> box,
+<cite>Find</cite> or article view).</li>
+<li>Articles found by following a redirect now show redirect info at the
+top.</li>
+<li>Articles are now loaded only when their tab is selected.</li>
+<li>Improve history: remember preferred dictionaries order,
+remember scroll position of recent articles.</li>
+<li>Add basic support for inter-wiki links (see <a class="reference internal" href="#limitations">Limitations</a>).</li>
+<li>Replace <cite>Lookup Box</cite> action button inside lookup box with a <cite>Clear</cite>
+button, make it look better.</li>
+<li>Revise application state and settings persistence implementation to
+better support new features (improved history, customizable article
+font). State saved by 0.8.0 is ignored.</li>
+<li>Rearrange menus, add new shortcuts.</li>
+<li>Remove support for JSON article format.</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>0.8.0<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>UI rewritten in <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt">PyQt</a>/<a class="reference external" href="http://qt.nokia.com">Qt</a>.</li>
+<li><a class="reference external" href="http://doc.qt.nokia.com/4.5/qmainwindow.html#qt-main-window-framework">Customizable UI components layout</a>.</li>
+<li>Improve keyboard navigation.</li>
+<li>Improve article rendering.</li>
+<li>Add toolbar.</li>
+<li>Use single word completion list instead of word list per language,
+show best match at the top.</li>
+<li>In word list group similar titles together (titles that differ only
+in case or accented characters except for one and two-letter
+titles).</li>
+<li>Render articles in both old JSON-based format (<cite>.aar</cite> dictionaries)
+and HTML (<cite>.html.aar</cite> dictionaries).</li>
+<li>Switch between Aard Dictionary article visual style with customizable
+colors and Wikipedia Monobook style.</li>
+<li>Implement <em class="menuselection">Article ‣ Save</em> action: saves article to
+HTML file.</li>
+<li>Implement <em class="menuselection">Dictionary ‣ Add Directory...</em>: adds
+directory to be scanned for dictionaries on application start, opens
+all dictionaries found (non-recursive).</li>
+<li>Display list of language link languages in dictionary info dialog.</li>
+<li>Build Mac OS X application bundle.</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>0.7.6.1<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix <em class="menuselection">Open...</em> to work in both Maemo 4 and Maemo 5</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>0.7.6<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Include license, documentation, icons and desktop files in source
+distribution generated by <tt class="docutils literal"><span class="pre">setup.py</span></tt>.</li>
+<li>Added ability to open online Wikipedia article in a browser
+(<em class="menuselection">Navigate ‣ Online Article</em>) and to copy article
+URL (<em class="menuselection">Dictionary ‣ Copy ‣ Article URL</em>).</li>
+<li>Open all volumes of the same dictionary when one volume is open
+if other volumes are in the same directory.</li>
+<li>Fixed auto selecting article from most recently used dictionary (this
+didn&#8217;t always work with multi volume dictionaries since volume id
+was used instead of dictionary id).</li>
+<li>Remove <tt class="kbd docutils literal"><span class="pre">Control-f</span></tt> key binding for history forward and
+<tt class="kbd docutils literal"><span class="pre">Control-b</span></tt> for history back in Hildon UI, use
+<tt class="kbd docutils literal"><span class="pre">Shift-Back</span></tt> and <tt class="kbd docutils literal"><span class="pre">Back</span></tt> instead.</li>
+<li>Windows version now uses Python 2.6.</li>
+<li>Windows installer updated: by default Aard Dictionary now goes into
+<cite>Aard Dictionary</cite> group, shortcuts to web site, forum, and
+uninstaller are created.</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>0.7.5<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Added command line option to print dictionary metadata.</li>
+<li>Language tabs scroll when dictionaries in many languages are open.</li>
+<li>Display Wikipedia language code in article tab title.</li>
+<li>When article found in multiple dictionaries select tab with article
+from most recently used dictionary (<a class="reference external" href="http://github.com/aarddict/desktop/issues/1">issue #1</a>).</li>
+<li>Added ability to verify dictionary data integrity:
+<em class="menuselection">Dictionary ‣ Verify</em>.</li>
+<li>Fixed redirects: some redirects previously were resolving
+incorrectly because weak string matching (base characters only) was
+used.</li>
+<li>Added ability to select string matching strength:
+<em class="menuselection">Dictionary ‣ Match</em>.</li>
+<li>Render previously ignored <tt class="docutils literal"><span class="pre">dd</span></tt> tag often used in Wikipedia
+articles in serif italic font.</li>
+<li>Implemented links to article sections (<a class="reference external" href="http://github.com/aarddict/desktop/issues/6">issue #6</a>).</li>
+<li>Highlight current item in word lookup history dropdown list.</li>
+<li>Better lookup history navigation: previously if link followed was
+already in history that history item whould be activated resulting
+in confusing result of subsequent <cite>Back</cite> or <cite>Forward</cite> actions.</li>
+<li>Link sensitivity tweaks to reduce unintended clicks when finger
+scrolling articles on tablet.</li>
+<li>Fixed handling of articles with multiple tables in same position
+(resulted in application crash on Windows).</li>
+<li>Properly limit matched word list for multivolume dictionaries.</li>
+<li>Python 2.5 .deb is now installable on Ubuntu 8.04 LTS.</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>0.7.4<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Customizable table rows background</li>
+<li>Added Russian translation</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>0.7.3<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Customizable link colors (<a class="reference external" href="http://github.com/aarddict/desktop/issues/2">issue #2</a>)</li>
+<li>Updated default link colors (<a class="reference external" href="http://github.com/aarddict/desktop/issues/2">issue #2</a>)</li>
+<li>+/- keys on N800/N810 change article text size (<a class="reference external" href="http://github.com/aarddict/desktop/issues/3">issue #3</a>)</li>
+<li>Article finger scrolling and link sensitivity tweaks</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>0.7.2<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Much faster word navigation (<a class="reference external" href="http://github.com/aarddict/desktop/issues/4">issue #4</a>)</li>
+<li>Fixed memory leak (<a class="reference external" href="http://github.com/aarddict/desktop/issues/4">issue #4</a>)</li>
+<li>Visual feedback when link clicked</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>0.7.1<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Better redirects.</li>
+<li>Better dictionary information display in info dialog and window
+title.</li>
+<li>Added <cite>Lookup Box</cite> action - move focus to word input field and
+select it&#8217;s content (bound to <tt class="kbd docutils literal"><span class="pre">Ctrl+L</span></tt>).</li>
+<li>Place cursor at the beginning of article text buffer - helps make
+<a class="reference external" href="https://bugs.maemo.org/show_bug.cgi?id=2469">Maemo bug 2469</a> less annoying (scrolling to cursor on every text
+view size change).</li>
+<li>Fixed glitch in articles tabs display (event box for articles tab
+labels wasn&#8217;t invisible, looked bad on Maemo and Windows).</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>0.7.0<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Initial release. Changes compared to <a class="reference external" href="http://sdictviewer.sourceforge.net">SDict Viewer</a>:</p>
+<ul class="simple">
+<li>New binary dictionary format</li>
+<li>New article format</li>
+<li>Use <a class="reference external" href="http://pyicu.osafoundation.org">PyICU</a>/<a class="reference external" href="http://www.icu-project.org">ICU</a> for Unicode collation</li>
+<li>Updated UI</li>
+</ul>
+<p>Major user visible differences:</p>
+<ul class="simple">
+<li>Lenient search (case-insensitive, ignores secondary differences like
+accented characters)</li>
+<li>Faster startup, faster word lookup</li>
+<li>Better link representation in articles, footnote navigation inside
+article</li>
+<li>Better word lookup history navigation</li>
+<li>Updated UI</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+	
+            
+        <p>
+        <a class="uplink" href="../../docs/index.html">Docs</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../../aarddict-android/doc/aarddict-android.html">Aard Dictionary for Android</a>&#160;&#160;»
+        </p>
+
+	
+      </div>
+
+
+
+
+    <div class="footer">
+        &copy; Copyright 2008-2013, Igor Tkach.
+      Last updated on Jan 13, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+    <div class="footer">
+      <small><a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy</small>
+    </div>
+
+
+  </body>
+</html>

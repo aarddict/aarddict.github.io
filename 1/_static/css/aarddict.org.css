@@ -1,0 +1,101 @@
+body {
+    min-width: 30em;
+}
+
+a.external:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: xx-small;
+  vertical-align: top;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f08e";
+  margin-left: 2px;
+}
+
+.downloadLinkList a[href^="http:"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f019";
+  margin-right: 3px;
+}
+
+.downloadLinkList a[href^="magnet:"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f076";
+  margin-right: 3px;
+}
+
+.downloadLinkList a[href$=".torrent"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0ed";
+  margin-right: 3px;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+ul>li>small {
+    font-style: italic;
+    font-family: serif;
+}
+
+div.header h2 {
+    text-transform: none;
+    color: gray;
+}
+
+#siteName {
+   text-shadow: 1px 1px 2px gray;
+   font-size: 32px;
+   font-weight: bold;
+}
+
+a.icon-link {
+    text-decoration: none;
+    font-size: x-large;
+    text-shadow: 1px 1px 2px gray;
+}
+
+i.fa {
+    text-decoration: none;
+    padding-right: 3px;
+}
+
+#qrcode {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+ list-style-type: none;
+}
+
+ul.downloadLinkList {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+    column-count: 2;
+    column-gap: 2em;
+}
