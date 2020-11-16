@@ -2,80 +2,76 @@
 <html lang="en">
   <head>
     <title>Aard 2</title>
-    <meta name="viewport" content="initial-scale=1.0,width=device-width">
-    <meta name="keywords" content="offline wikipedia wiktionary wikiquote reader dictionary aard aard2 slob">
-    <meta name="description" content="Dictionary and offline Wikipedia reader.">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-          href="style.css">
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-19351563-1']);
-        _gaq.push(['_trackPageview']);
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <meta
+      name="keywords"
+      content="offline wikipedia wiktionary wikiquote reader dictionary aard aard2 slob"
+    />
+    <meta
+      name="description"
+      content="Dictionary and offline Wikipedia reader."
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: auto;
+        line-height: 1.5;
+      }
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+      a {
+        color: black;
+      }
+
+      a:visited {
+        color: darkgrey;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      #content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1em;
+      }
+
+      #app-logo {
+        height: 64px;
+      }
+    </style>
   </head>
   <body>
-    <table id="content">
-        <tr>
-            <td align="center">
-
-              <table>
-                <tr>
-                  <td style="vertical-align: top">
-                    <img id="app-logo" src="aard2.svg" alt="Aard 2 logo">
-                  </td>
-                  <td>
-                    <div id="app-name">
-                      Aard&nbsp;2
-                    </div>
-
-                    <ul class="fa-ul">
-                      <li>
-                          <a href="http://github.com/itkach/aard2-android">
-                              <i class="fa-li fa fa-android"></i>
-                              Android</a>
-                      </li>
-                      <li>
-                          <a href="http://github.com/itkach/aard2-web">
-                              <i class="fa-li fa fa-desktop"></i>
-                              Desktop/Web</a>
-                      </li>
-                      <li>
-                          <a href="http://github.com/itkach/slob/wiki/Dictionaries">
-                              <i class="fa-li fa fa-book"></i>
-                              Dictionaries</a>
-                      </li>
-                      <li>
-                          <a href="http://aarddict.org/forum/">
-                              <i class="fa-li fa fa-comments"></i>
-                              Discuss</a>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </table>
-
-
-              <div id="footer" align="center">
-                  <span>
-                      Looking for old Aard Dictionary? <a href="1/index.html">It's here</a>.
-                  </span>
-                  <br>
-                  <span>
-                      &copy; 2015 Igor Tkach.
-                      <a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy.
-                  </span>
-              </div>
-
-            </td>
-        </tr>
-    </table>
-
+    <div id="content">
+      <div style="display: flex">
+        <img
+          style="margin-right: 0.5rem; height: 64px"
+          src="aard2.svg"
+          alt="Aard 2 logo"
+        />
+        <div>
+          <div style="font-size: 48pt; margin-top: -0.5rem;">Aard&nbsp;2</div>
+          <div style="margin-top: -1rem">
+            <div>
+              <a href="http://github.com/itkach/aard2-android">Android</a>
+            </div>
+            <div>
+              <a href="http://github.com/itkach/aard2-web">Desktop/Web</a>
+            </div>
+            <div>
+              <a href="http://github.com/itkach/slob/wiki/Dictionaries">
+                Dictionaries</a
+              >
+            </div>
+            <div>
+              <a href="./forum">Discuss</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
