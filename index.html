@@ -26,50 +26,141 @@
         color: darkgrey;
       }
 
-      ul {
-        list-style-type: none;
-      }
-
       #content {
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         margin: 1em;
       }
 
       #app-logo {
         height: 64px;
       }
+
+      .mi {
+        margin-right: 5px;
+      }
+
+      .mi:not(:last-child):after {
+        content: "·";
+      }
+
+      .m {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        font-size: x-small;
+      }
+
+      #flag {
+        position: relative;
+        width: 90vw;
+        height: 50vh;
+      }
+
+      #flag .up {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: blue;
+      }
+
+      #flag .down {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+        background: yellow;
+      }
+
+      #fc {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .blink {
+        animation: blinker 3s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0.2;
+        }
+      }
     </style>
   </head>
   <body>
     <div id="content">
-      <div style="display: flex">
-        <img
-          style="margin-right: 0.5rem; height: 64px"
-          src="aard2.svg"
-          alt="Aard 2 logo"
-        />
-        <div>
-          <div style="font-size: 48pt; margin-top: -0.5rem;">Aard&nbsp;2</div>
-          <div style="margin-top: -1rem">
-            <div>
-              <a href="http://github.com/itkach/aard2-android">Android</a>
-            </div>
-            <div>
-              <a href="http://github.com/itkach/aard2-web">Desktop/Web</a>
-            </div>
-            <div>
-              <a href="http://github.com/itkach/slob/wiki/Dictionaries">
-                Dictionaries</a
-              >
-            </div>
-            <div>
-              <a href="./forum">Discuss</a>
+      <div>
+        <div style="display: flex">
+          <img
+            style="margin-right: 0.5rem; height: 48px"
+            src="aard2.svg"
+            alt="Aard 2 logo"
+          />
+          <div>
+            <div style="font-size: 30px; margin-top: -0.5rem">Aard&nbsp;2</div>
+            <div style="margin-top: -10px">
+              <span class="blink">Help Ukraine!</span>
             </div>
           </div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a
+            href="https://www.unicefusa.org/stories/children-eastern-ukraine-fear-future/39547?form=FUNKBHMZQDQ"
+            >UNICEF</a
+          >
+        </li>
+        <li>
+          <a href="https://razomforukraine.org/">Razom</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/donate/337101825010055/"
+            >United Help Ukraine</a
+          >
+        </li>
+        <li>
+          <a href="https://internationalmedicalcorps.org/"
+            >International Medical Corps</a
+          >
+        </li>
+        <li>
+          <a href="https://www.projecthope.org/">Project HOPE</a>
+        </li>
+        <li>
+          <a href="https://novaukraine.org/">Nova Ukraine</a>
+        </li>
+      </ul>
+      <div id="fc">
+        <div id="flag">
+          <div class="up"></div>
+          <div class="down"></div>
+        </div>
+      </div>
+      <div class="m">
+        <div class="mi">
+          <a href="http://github.com/itkach/aard2-android">Android</a>
+        </div>
+
+        <div class="mi">
+          <a href="http://github.com/itkach/aard2-web">Desktop/Web</a>
+        </div>
+        <div class="mi">
+          <a href="http://github.com/itkach/slob/wiki/Dictionaries">
+            Dictionaries
+          </a>
+        </div>
+        <div class="mi">
+          <a href="./forum">Forum</a>
         </div>
       </div>
     </div>
